@@ -13,7 +13,7 @@ import java.util.List;
 public class Main {
 
 	public static void main(String[] args) throws IOException {
-		List<Appliance> appliance;
+		List<Appliance> appliances;
 
 		ServiceFactory factory = ServiceFactory.getInstance();
 		ApplianceService service = factory.getApplianceService();
@@ -25,9 +25,9 @@ public class Main {
 		criteriaOven.add(Oven.CAPACITY.toString(), 33);
 
 
-		appliance =  service.find(criteriaOven);
+		appliances =  service.find(criteriaOven);
 
-		PrintApplianceInfo.print( appliance);
+		PrintApplianceInfo.print( appliances);
 
 		////////////////////////////////////////////////////////////////
 
@@ -37,9 +37,9 @@ public class Main {
 
 
 
-		appliance = service.find(criteriaOven);
+		appliances = service.find(criteriaOven);
 
-		PrintApplianceInfo.print(appliance);
+		PrintApplianceInfo.print(appliances);
 
 		//////////////////////////////////////////////////////////////////
 
@@ -50,8 +50,8 @@ public class Main {
 		criteriaTabletPC.add(TabletPC.MEMORY_ROM.toString(), 4);
 
 
-		appliance = service.find(criteriaTabletPC);// find(Object...obj)
+		appliances = service.find(criteriaTabletPC);// find(Object...obj)
 
-		PrintApplianceInfo.print(appliance);
+		PrintApplianceInfo.print(appliances);
 	}
 }

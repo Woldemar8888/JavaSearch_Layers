@@ -16,13 +16,29 @@ public class Speakers extends Appliance {
         CORD_LENGTH = Integer.parseInt(params.get("CORD_LENGTH"));
     }
 
+    public int getPOWER_CONSUMPTION() {
+        return POWER_CONSUMPTION;
+    }
+
+    public int getNUMBER_OF_SPEAKERS() {
+        return NUMBER_OF_SPEAKERS;
+    }
+
+    public String getFREQUENCY_RANGE() {
+        return FREQUENCY_RANGE;
+    }
+
+    public int getCORD_LENGTH() {
+        return CORD_LENGTH;
+    }
+
     @Override
-    public String toString() {
-        return "Speakers{" +
-                "POWER_CONSUMPTION=" + POWER_CONSUMPTION +
-                ", NUMBER_OF_SPEAKERS=" + NUMBER_OF_SPEAKERS +
-                ", FREQUENCY_RANGE='" + FREQUENCY_RANGE + '\'' +
-                ", CORD_LENGTH=" + CORD_LENGTH +
-                '}' + '\n';
+    public void showInfo() {
+        System.out.println("Appliance type : Speakers" + "\n" +
+                "\t" + "POWER_CONSUMPTION = " + POWER_CONSUMPTION + "\n" +
+                "\t" + "NUMBER_OF_SPEAKERS = " + NUMBER_OF_SPEAKERS  + "\n" +
+                "\t" + "FREQUENCY_RANGE = " + FREQUENCY_RANGE + "\n" +
+                "\t" + "CORD_LENGTH = " + CORD_LENGTH + "\n"
+        );
     }
 }

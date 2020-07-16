@@ -24,9 +24,9 @@ public class ApplianceServiceImpl implements ApplianceService{
 		DAOFactory factory = DAOFactory.getInstance();
 		ApplianceDAO applianceDAO = factory.getApplianceDAO();
 		
-		List<Appliance> appliance =  applianceDAO.find(criteria);
+		List<Appliance> appliances =  applianceDAO.find(criteria);
 
-		return appliance;
+		return appliances;
 	}
 }
 

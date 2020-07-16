@@ -20,15 +20,39 @@ public class Laptop extends Appliance {
         DISPLAY_INCHS = Double.parseDouble(params.get("DISPLAY_INCHS"));
     }
 
+    public double getBATTERY_CAPACITY() {
+        return BATTERY_CAPACITY;
+    }
+
+    public String getOS() {
+        return OS;
+    }
+
+    public int getMEMORY_ROM() {
+        return MEMORY_ROM;
+    }
+
+    public int getSYSTEM_MEMORY() {
+        return SYSTEM_MEMORY;
+    }
+
+    public double getCPU() {
+        return CPU;
+    }
+
+    public double getDISPLAY_INCHS() {
+        return DISPLAY_INCHS;
+    }
+
     @Override
-    public String toString() {
-        return "Laptop{" +
-                "BATTERY_CAPACITY=" + BATTERY_CAPACITY +
-                ", OS='" + OS + '\'' +
-                ", MEMORY_ROM=" + MEMORY_ROM +
-                ", SYSTEM_MEMORY_=" + SYSTEM_MEMORY +
-                ", CPU=" + CPU +
-                ", DISPLAY_INCHS=" + DISPLAY_INCHS +
-                '}' + '\n';
+    public void showInfo() {
+        System.out.println("Appliance type : Laptop" + "\n" +
+                "\t" + "BATTERY_CAPACITY = " + BATTERY_CAPACITY + "\n" +
+                "\t" + "OS = " + OS + "\n" +
+                "\t" + "MEMORY_ROM = " + MEMORY_ROM + "\n" +
+                "\t" + "SYSTEM_MEMORY = " + SYSTEM_MEMORY + "\n" +
+                "\t" + "CPU = " + CPU + "\n" +
+                "\t" + "DISPLAY_INCHS = " + DISPLAY_INCHS + "\n"
+        );
     }
 }

@@ -20,15 +20,39 @@ public class Refrigerator extends Appliance {
         WIDTH = Integer.parseInt(params.get("WIDTH"));
     }
 
+    public int getPOWER_CONSUMPTION() {
+        return POWER_CONSUMPTION;
+    }
+
+    public int getWEIGHT() {
+        return WEIGHT;
+    }
+
+    public int getFREEZER_CAPACITY() {
+        return FREEZER_CAPACITY;
+    }
+
+    public double getOVERALL_CAPACITY() {
+        return OVERALL_CAPACITY;
+    }
+
+    public int getHEIGHT() {
+        return HEIGHT;
+    }
+
+    public int getWIDTH() {
+        return WIDTH;
+    }
+
     @Override
-    public String toString() {
-        return "Refrigerator{" +
-                "POWER_CONSUMPTION=" + POWER_CONSUMPTION +
-                ", WEIGHT=" + WEIGHT +
-                ", FREEZER_CAPACITY=" + FREEZER_CAPACITY +
-                ", OVERALL_CAPACITY=" + OVERALL_CAPACITY +
-                ", HEIGHT=" + HEIGHT +
-                ", WIDTH=" + WIDTH +
-                '}' + '\n';
+    public void showInfo() {
+        System.out.println("Appliance type : Refrigerator" + "\n" +
+                "\t" + "POWER_CONSUMPTION = " + POWER_CONSUMPTION + "\n" +
+                "\t" + "WEIGHT = " + WEIGHT + "\n" +
+                "\t" + "FREEZER_CAPACITY = " + FREEZER_CAPACITY + "\n" +
+                "\t" + "OVERALL_CAPACITY = " + OVERALL_CAPACITY + "\n" +
+                "\t" + "HEIGHT = " + HEIGHT + "\n" +
+                "\t" + "WIDTH = " + WIDTH + "\n"
+        );
     }
 }

@@ -18,14 +18,34 @@ public class TabletPC extends Appliance {
         COLOR = params.get("COLOR");
     }
 
+    public int getBATTERY_CAPACITY() {
+        return BATTERY_CAPACITY;
+    }
+
+    public int getDISPLAY_INCHES() {
+        return DISPLAY_INCHES;
+    }
+
+    public int getMEMORY_ROM() {
+        return MEMORY_ROM;
+    }
+
+    public int getFLASH_MEMORY_CAPACITY() {
+        return FLASH_MEMORY_CAPACITY;
+    }
+
+    public String getCOLOR() {
+        return COLOR;
+    }
+
     @Override
-    public String toString() {
-        return "TabletPC{" +
-                "BATTERY_CAPACITY=" + BATTERY_CAPACITY +
-                ", DISPLAY_INCHES=" + DISPLAY_INCHES +
-                ", MEMORY_ROM=" + MEMORY_ROM +
-                ", FLASH_MEMORY_CAPACITY=" + FLASH_MEMORY_CAPACITY +
-                ", COLOR='" + COLOR + '\'' +
-                '}' + '\n';
+    public void showInfo() {
+        System.out.println("Appliance type : TabletPC" + "\n" +
+                "\t" + "BATTERY_CAPACITY = " + BATTERY_CAPACITY + "\n" +
+                "\t" + "DISPLAY_INCHES = " + DISPLAY_INCHES + "\n" +
+                "\t" + "MEMORY_ROM = " + MEMORY_ROM + "\n" +
+                "\t" + "FLASH_MEMORY_CAPACITY = " + FLASH_MEMORY_CAPACITY + "\n" +
+                "\t" + "COLOR = " + COLOR + "\n"
+        );
     }
 }

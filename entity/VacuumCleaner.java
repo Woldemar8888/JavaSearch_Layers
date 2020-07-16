@@ -20,15 +20,39 @@ public class VacuumCleaner extends Appliance {
         CLEANING_WIDTH = Integer.parseInt(params.get("CLEANING_WIDTH"));
     }
 
+    public int getPOWER_CONSUMPTION() {
+        return POWER_CONSUMPTION;
+    }
+
+    public String getFILTER_TYPE() {
+        return FILTER_TYPE;
+    }
+
+    public String getBAG_TYPE() {
+        return BAG_TYPE;
+    }
+
+    public String getWAND_TYPE() {
+        return WAND_TYPE;
+    }
+
+    public int getMOTOR_SPEED_REGULATION() {
+        return MOTOR_SPEED_REGULATION;
+    }
+
+    public int getCLEANING_WIDTH() {
+        return CLEANING_WIDTH;
+    }
+
     @Override
-    public String toString() {
-        return "VacuumCleaner{" +
-                "POWER_CONSUMPTION=" + POWER_CONSUMPTION +
-                ", FILTER_TYPE='" + FILTER_TYPE + '\'' +
-                ", BAG_TYPE='" + BAG_TYPE + '\'' +
-                ", WAND_TYPE='" + WAND_TYPE + '\'' +
-                ", MOTOR_SPEED_REGULATION='" + MOTOR_SPEED_REGULATION + '\'' +
-                ", CLEANING_WIDTH=" + CLEANING_WIDTH +
-                '}' + '\n';
+    public void showInfo() {
+        System.out.println("Appliance type : VacuumCleaner" + "\n" +
+                "\t" + "POWER_CONSUMPTION = " + POWER_CONSUMPTION + "\n" +
+                "\t" + "FILTER_TYPE = " + FILTER_TYPE + "\n" +
+                "\t" + "BAG_TYPE = " + BAG_TYPE + "\n" +
+                "\t" + "WAND_TYPE = " + WAND_TYPE + "\n" +
+                "\t" + "MOTOR_SPEED_REGULATION = " + MOTOR_SPEED_REGULATION + "\n" +
+                "\t" + "CLEANING_WIDTH = " + CLEANING_WIDTH + "\n"
+        );
     }
 }

@@ -20,16 +20,41 @@ public class Oven extends Appliance {
         WIDTH = Double.parseDouble(params.get("WIDTH"));
     }
 
+    public int getPOWER_CONSUMPTION() {
+        return POWER_CONSUMPTION;
+    }
+
+    public int getWEIGHT() {
+        return WEIGHT;
+    }
+
+    public int getCAPACITY() {
+        return CAPACITY;
+    }
+
+    public int getDEPTH() {
+        return DEPTH;
+    }
+
+    public double getHEIGHT() {
+        return HEIGHT;
+    }
+
+    public double getWIDTH() {
+        return WIDTH;
+    }
+
     @Override
-    public String toString() {
-        return "Oven{" +
-                "POWER_CONSUMPTION=" + POWER_CONSUMPTION +
-                ", WEIGHT=" + WEIGHT +
-                ", CAPACITY=" + CAPACITY +
-                ", DEPTH=" + DEPTH +
-                ", HEIGHT=" + HEIGHT +
-                ", WIDTH=" + WIDTH +
-                '}' + '\n';
+    public void showInfo() {
+        System.out.println("Appliance type : Oven" + "\n" +
+                "\t" + "POWER_CONSUMPTION = " + POWER_CONSUMPTION + "\n" +
+                "\t" + "WEIGHT = " + WEIGHT + "\n" +
+                "\t" + "CAPACITY = " + CAPACITY + "\n" +
+                "\t" + "DEPTH = " + DEPTH + "\n" +
+                "\t" + "HEIGHT = " + HEIGHT + "\n" +
+                "\t" + "WIDTH = " + WIDTH + "\n"
+
+        );
     }
 }
 
